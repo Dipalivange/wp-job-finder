@@ -1,0 +1,380 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ 
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #000;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.container {
+  margin: 25px auto;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.accordion--form {
+  border-radius: 15px;
+  background-color: #fbf8f8;
+  padding: 50px;
+  width: 100%;
+}
+
+.accordion--form__fieldset {
+  border: 0;
+  margin: 0 0 1px 0;
+  padding: 0;
+}
+
+.accordion--form__legend {
+  border-radius: 40px !important;
+  text-align:center;
+    border-radius: 3px;
+    background-color: #555;
+    color: #fff;
+    display: block;
+    margin: 0;
+    padding: 15px 10px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.accordion--form__legend-active {
+  background-color: #c9aaaa;
+  color: #fff;
+}
+
+.accordion--form__wrapper {
+  height: 0;
+  overflow: hidden;
+}
+.accordion--form__wrapper-active {
+  height: auto;
+  padding: 30px 0;
+}
+
+.accordion--form__row {
+  clear: both;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.accordion--form__label {
+  margin-left: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.accordion--form__text {
+  border: 1px solid #c9aaaa;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.accordion--form__textarea {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+
+
+.accordion--form__invalid {
+  background-color: red;
+  color: #fff;
+  display: none;
+  margin: 20px 0;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.accordion--form__next-btn, 
+.accordion--form__prev-btn {
+    background-color: #c9aaaa;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 2px 0 0;
+    padding: 5px 25px 5px 25px;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.accordion--form__next-btn:hover, 
+.accordion--form__prev-btn:hover {
+  background-color: #000;
+}
+.app-time {
+  border: 1px solid #fff;
+  padding: 20px 30px;
+  box-shadow: 2px 4px 10px 0px #c7cacce3;
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 5px;
+  right: 0;
+  bottom: 0;
+  left: 40px;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #fff;
+  border: 1px solid #999;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #e5e7eb;
+}
+.option-input:checked {
+  border: 1px solid #fff;
+}
+.option-input:checked::before {
+  color: #d9486d;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 12px;
+  left: 4px;
+  line-height: 20px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.option-input.radio {
+  z-index: unset;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+  margin-top: 6px;
+}
+.app-check {
+  margin-left: -20px;
+  display: inline-flex;
+  margin-bottom: 5px;
+}
+.app-border {
+  border: 2px solid #fff;
+  border-radius: 7px;
+  padding: 5px 7px 5px 9px;
+  padding-left: 40px;
+  min-height: 30px;
+}
+
+.option-input.radio:checked + .app-border {
+  background: #d9486d;
+}
+.option-input.radio:disabled,
+.option-input.radio:disabled + .app-border {
+  cursor: not-allowed;
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+.app-label {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+select#booking_services {
+  background-color: #ffff;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 15px 10px;
+  width: 100%;
+  border: 1px solid #c9aaaa;;
+} 
+*:disabled {
+  background-color: dimgrey;
+  color: linen;
+  opacity: 1;
+}
+label#no_slot{
+  border: 1px solid #000;
+  color: red;
+  padding: 10px 5px 10px 15px;
+}
+label#no_date{
+ 
+  color: red;
+  padding: 0px 5px 10px 0px;
+}
+
+input.accordion--form__text[type="text"], input[type="password"], input[type="email"], textarea,select{
+  border-radius: 20px;
+}
+input#cod_price {
+  height: 15px;
+  width: 51%;
+}
+table#success_table {
+  width: 50%;
+  margin: auto;
+}
+
+input#paypalbutton {
+  background-color: #c9aaaa;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 2px 0px 0px;
+  padding: 10px 35px 10px 35px;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 500;
+
+}
+
+
+.paypalInfo {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+input.accordion--form__submit.start_over {
+  border-radius: 7px;
+  background-color: #c79494;
+}  
+/* div#booking_time {
+  margin-top: -35px;
+} */
+/* TOOLTIP CSS */
+.tooltip_wrapper {
+  text-transform: uppercase;
+  background: #c9aaaa;
+  color: #fff;
+  cursor: pointer;
+  /* font-family: "Gill Sans", Impact, sans-serif; */
+  font-size: 20px;
+  margin: 0 2px 0 0;
+  padding: 5px 25px 5px 25px;
+  position: relative;
+  text-align: center;
+  width: 200px;
+  -webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+  }
+  
+  .tooltip_wrapper .tooltip {
+  background: #c9aaaa;
+  bottom: 100%;
+  color: #fff;
+  display: block;
+  left: -3px;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 20px;
+  pointer-events: none;
+  position: absolute;
+  width: 180%;
+  -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+     -o-transform: translateY(10px);
+      transform: translateY(10px);
+  -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+     -o-transition: all .25s ease-out;
+      transition: all .25s ease-out;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+     -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+      font-size: 18px;
+   
+  }
+  
+  /* This bridges the gap so you can mouse into the tooltip without it disappearing */
+  .tooltip_wrapper .tooltip:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  }
+  
+  /* CSS Triangles - see Trevor's post */
+  .tooltip_wrapper .tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-top: solid #c9aaaa 10px;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+  }
+  
+  .tooltip_wrapper:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+     -o-transform: translateY(0px);
+      transform: translateY(0px);
+  }
+  
+  /* IE can just show/hide with no transition */
+  .lte8 .tooltip_wrapper .tooltip {
+  display: none;
+  }
+  
+  .lte8 .tooltip_wrapper:hover .tooltip {
+  display: block;
+  }
+
+  /*  */
+  .mail_exist {
+    font-size: 15px;
+    color: red;
+    margin: 8px;
+}
